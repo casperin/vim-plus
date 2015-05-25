@@ -33,15 +33,17 @@ map <C-n> :NERDTreeToggle<CR>
 map <leader>n :NERDTreeFind<CR>
 let g:NERDTreeWinSize = 50
 
-
 " Airline
 """""""""""
 let g:airline#extensions#tabline#enabled = 1
-" These are not working for me in iterm2 :(
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+set laststatus=2    " Makes the powerline show up all the time
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 
 " Removed syntastic since I can't find any checker that actually works. It's
