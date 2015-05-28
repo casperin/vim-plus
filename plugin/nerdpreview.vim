@@ -53,8 +53,8 @@ function! s:NerdPreviewToggle()
 endfunction
 
 
-" Start it
-:call s:NerdPreviewToggle()
+" Start it (by uncommenting the line below)
+" :call s:NerdPreviewToggle()
 
 " Export function so it's easy to toggle
 :command! PlusNerdPreviewToggle :call s:NerdPreviewToggle()
