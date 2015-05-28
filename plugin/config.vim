@@ -11,8 +11,8 @@ map <C-l> <C-w>l
 
 " Buffers
 nmap <Tab> :b#<CR>
-map <leader>b :FufBuffer<CR>
-map <leader>f :FufFile<CR>
+map <leader>b :CtrlPBuffer<CR>
+map <leader>f :CtrlP<CR>
 
 " Tabs/Buffers
 map gh :PlusNavLeftRight prev<CR>
