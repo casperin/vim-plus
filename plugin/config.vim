@@ -20,6 +20,8 @@ map gl :PlusNavLeftRight next<CR>
 
 map <Leader>w :PlusToggleSingleSplit<CR>
 
+map <Leader>q :bp\|bd #<CR>
+
 
 " Visual mode deleting (cutting to the black hole)
 xnoremap p "_dP
