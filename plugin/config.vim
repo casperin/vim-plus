@@ -3,6 +3,10 @@
 " Our great overlord
 let mapleader = ","
 
+" set ...
+nmap <Leader>ss :source %
+nmap <Leader>sh :set hls!<CR>
+
 " Splits
 map <C-h> <C-w>h
 map <C-j> <C-w>j
