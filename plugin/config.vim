@@ -1,11 +1,12 @@
 
 
 " Our great overlord
-let mapleader = ","
+let mapleader = "\<space>"
 
 " set ...
 nmap <Leader>ss :source %
 nmap <Leader>sh :set hls!<CR>
+nmap <Leader>p :set paste!<CR>
 
 " Splits
 map <C-h> <C-w>h
@@ -15,8 +16,8 @@ map <C-l> <C-w>l
 
 " Buffers
 nmap <Tab> :b#<CR>
-map <leader>b :CtrlPBuffer<CR>
-map <leader>f :CtrlP<CR>
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>o :CtrlP<CR>
 
 " Tabs/Buffers
 map gh :PlusNavLeftRight prev<CR>
@@ -43,13 +44,20 @@ let g:NERDTreeWinSize = 50
 """""""""""
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2    " Makes the powerline show up all the time
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+" let g:airline_left_sep = ''
+" let g:airline_left_alt_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_right_alt_sep = ''
+" let g:airline_symbols.branch = ''
+" let g:airline_symbols.readonly = ''
+" let g:airline_symbols.linenr = ''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 
 " Removed syntastic since I can't find any checker that actually works. It's
