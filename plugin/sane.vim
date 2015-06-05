@@ -1,8 +1,14 @@
 set nocompatible    " vim, not vi
 set encoding=utf-8  " Use utf-8 as standard
 
+set autoread        " Load the file if it has been changing outside vim
+
 syntax on
 filetype plugin indent on
+
+set guioptions-=L   " Remove scrollbars in macvim
+
+colorscheme desert  " Dark, but not too dark.
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files

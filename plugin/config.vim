@@ -32,6 +32,14 @@ map <Leader>q :bp\|bd #<CR>
 xnoremap p "_dP
 xnoremap s "_d
 
+" Insert mode moving
+imap <C-h> <Esc>bi
+imap <C-H> <Esc>Bi
+imap <C-l> <Esc>lwi
+imap <C-L> <Esc>lWi
+imap <C-k> <Esc>ka
+imap <C-j> <Esc>ja
+
 
 " NerdTree
 """"""""""""
