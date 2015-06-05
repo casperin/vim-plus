@@ -7,6 +7,7 @@ syntax on
 filetype plugin indent on
 
 set guioptions-=L   " Remove scrollbars in macvim
+set mouse=a         " Enable mouse scrolling
 
 colorscheme desert  " Dark, but not too dark.
 
