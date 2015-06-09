@@ -6,7 +6,8 @@ let mapleader = "\<space>"
 " set ...
 nmap <Leader>ss :source %
 nmap <Leader>sh :set hls!<CR>
-nmap <Leader>p :set paste!<CR>
+nmap <Leader>sp :set paste!<CR>
+nmap <leader>sr :ToggleRelativeNumbers<CR>
 
 " Splits
 map <C-h> <C-w>h
@@ -40,6 +41,10 @@ imap <C-L> <Esc>lWi
 imap <C-k> <Esc>ka
 imap <C-j> <Esc>ja
 
+" CtrlP
+"""""""""
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore node_modules, et al.
+let g:ctrlp_working_path_mode = 0
 
 " NerdTree
 """"""""""""

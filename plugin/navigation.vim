@@ -41,3 +41,13 @@ endfunction
 " Expose as :NavLeftRight command (takes one argument: 'next' or 'prev')
 :command! -nargs=1 PlusNavLeftRight call s:NavLeftRight(<f-args>)
 
+
+function! s:RelativeNumberToggle()
+    if(&relativenumber == 1)
+        set number
+    else
+        set relativenumber
+    endif
+endfunc
+
+:command! ToggleRelativeNumbers call s:RelativeNumberToggle()
