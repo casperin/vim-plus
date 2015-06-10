@@ -41,5 +41,7 @@ set suffixesadd+=.js " so `gf` works with requireJS
 set wildmenu
 set wildmode=longest:full,full
 
+set relativenumber  " Set relative numbers (can be toggle with <Leader>sr)
+
 set splitright      " new splits are opened to the right
 set splitbelow      " ... or below

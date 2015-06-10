@@ -33,6 +33,10 @@ map <Leader>q :bp\|bd #<CR>
 xnoremap p "_dP
 xnoremap s "_d
 
+" Yank method in a typical js class
+nmap ym ?:.function<CR>f{V%jy
+nmap dm ?:.function<CR>f{V%jd
+
 " Insert mode moving
 imap <C-h> <Esc>bi
 imap <C-H> <Esc>Bi
