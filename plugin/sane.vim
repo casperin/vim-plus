@@ -7,9 +7,15 @@ syntax on
 filetype plugin indent on
 
 set guioptions-=L   " Remove scrollbars in macvim
-set mouse=a         " Enable mouse scrolling
+"set mouse=a         " Enable mouse scrolling
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
 
-colorscheme desert  " Dark, but not too dark.
+set background=dark
+"colorscheme Tomorrow-Night-Eighties  " Dark, but not too dark.
+colorscheme gruvbox
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files
