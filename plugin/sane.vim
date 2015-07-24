@@ -9,7 +9,8 @@ filetype plugin indent on
 set guioptions-=L   " Remove scrollbars in macvim
 set mouse=a         " Enable mouse scrolling
 
-colorscheme desert  " Dark, but not too dark.
+"colorscheme desert  " Dark, but not too dark.
+colorscheme Tomorrow-Night-Eighties
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files
@@ -20,7 +21,9 @@ set backupdir=~/.vim/swp_backups//
 set directory=~/.vim/swp_backups//
 
 set ruler           " position of cursor
-set number          " line number
+"set number          " line number
+set nonumber
+set relativenumber  " Set relative numbers (can be toggle with <Leader>sr)
 set showcmd         " commands
 set hidden          " supress warning when switching away from an unsaved buffer
 set t_Co=256        " We will assume we're in a terminal that has 256 colors to work with
@@ -41,7 +44,8 @@ set suffixesadd+=.js " so `gf` works with requireJS
 set wildmenu
 set wildmode=longest:full,full
 
-set relativenumber  " Set relative numbers (can be toggle with <Leader>sr)
 
 set splitright      " new splits are opened to the right
 set splitbelow      " ... or below
+
+set tw=100          " Wrap lines at 100 characters (using gq), rather than 80
