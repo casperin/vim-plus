@@ -7,10 +7,17 @@ syntax on
 filetype plugin indent on
 
 set guioptions-=L   " Remove scrollbars in macvim
-set mouse=a         " Enable mouse scrolling
 
+"set mouse=a         " Enable mouse scrolling
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
+set background=dark
 "colorscheme desert  " Dark, but not too dark.
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Eighties  " Dark, but not too dark.
+colorscheme gruvbox
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files
@@ -48,4 +55,4 @@ set wildmode=longest:full,full
 set splitright      " new splits are opened to the right
 set splitbelow      " ... or below
 
-set tw=100          " Wrap lines at 100 characters (using gq), rather than 80
+set tw=100          " Wrap lines at 100 characters (using gq), raher than 80
