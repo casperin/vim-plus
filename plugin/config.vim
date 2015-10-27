@@ -28,14 +28,13 @@ map <Leader>w :PlusToggleSingleSplit<CR>
 
 map <Leader>q :bp\|bd #<CR>
 
-
 " Visual mode deleting (cutting to the black hole)
 xnoremap p "_dP
 xnoremap s "_d
 
-" Yank method in a typical js class
-nmap ym ?:.function<CR>f{V%jy
-nmap dm ?:.function<CR>f{V%jd
+" Remap increase and decrease number because <C-a> is used for tmux
+:nnoremap <leader>a <C-a>
+:nnoremap <leader>d <C-x>
 
 " CtrlP
 """""""""
