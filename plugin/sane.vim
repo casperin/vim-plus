@@ -17,7 +17,8 @@ set guioptions-=L  "remove left-hand scroll bar
 set background=dark
 "colorscheme desert  " Dark, but not too dark.
 "colorscheme Tomorrow-Night-Eighties  " Dark, but not too dark.
-colorscheme gruvbox
+colorscheme frood
+colorscheme 256-grayvim
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files

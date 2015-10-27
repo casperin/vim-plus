@@ -37,14 +37,6 @@ xnoremap s "_d
 nmap ym ?:.function<CR>f{V%jy
 nmap dm ?:.function<CR>f{V%jd
 
-" Insert mode moving
-imap <C-h> <Esc>bi
-imap <C-H> <Esc>Bi
-imap <C-l> <Esc>lwi
-imap <C-L> <Esc>lWi
-imap <C-k> <Esc>ka
-imap <C-j> <Esc>ja
-
 " CtrlP
 """""""""
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore node_modules, et al.
@@ -75,6 +67,8 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:flow#autoclose = 1
 
 
 " Removed syntastic since I can't find any checker that actually works. It's
