@@ -28,6 +28,10 @@ silent !mkdir ~/.vim/swp_backups > /dev/null 2>&1
 set backupdir=~/.vim/swp_backups//
 set directory=~/.vim/swp_backups//
 
+if filereadable(glob(".vimrc.local"))
+    source .vimrc.local
+endif
+
 set ruler           " position of cursor
 "set number          " line number
 set nonumber
