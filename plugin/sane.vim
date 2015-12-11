@@ -17,8 +17,9 @@ set guioptions-=L  "remove left-hand scroll bar
 set background=dark
 "colorscheme desert  " Dark, but not too dark.
 "colorscheme Tomorrow-Night-Eighties  " Dark, but not too dark.
-colorscheme frood
+" colorscheme frood
 "colorscheme 256-grayvim
+colorscheme iceberg
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files
@@ -35,8 +36,8 @@ set relativenumber  " Set relative numbers (can be toggle with <Leader>sr)
 set showcmd         " commands
 set hidden          " supress warning when switching away from an unsaved buffer
 set t_Co=256        " We will assume we're in a terminal that has 256 colors to work with
-set shiftwidth=4    " Tabs width
-set tabstop=4       " Tabs width
+set shiftwidth=2    " Tabs width
+set tabstop=2       " Tabs width
 set expandtab       " Insert spaces and not tabs
 set autoindent      " auto indent
 set smartindent     " smart indent
@@ -56,7 +57,7 @@ set wildmode=longest:full,full
 set splitright      " new splits are opened to the right
 set splitbelow      " ... or below
 
-set tw=100          " Wrap lines at 100 characters (using gq), raher than 80
+" set tw=100          " Wrap lines at 100 characters (using gq), raher than 80
 
 if filereadable(glob(".vimrc.local"))
     source .vimrc.local
