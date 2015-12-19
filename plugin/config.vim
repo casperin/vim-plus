@@ -73,5 +73,9 @@ let g:flow#autoclose = 1
 " Removed syntastic since I can't find any checker that actually works. It's
 " either too slow, or won't work with es6, jsx, and types.
 "
-" let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_checkers = ['eslint']
 " autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jsxhint']
+function! StrTrim(txt)
+  return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+endfunction
+let b:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
