@@ -79,3 +79,6 @@ function! StrTrim(txt)
   return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 endfunction
 let b:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
+
+" EditorConfig - Should work nicely with fugitive and scp
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
