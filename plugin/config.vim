@@ -80,5 +80,3 @@ function! StrTrim(txt)
 endfunction
 let b:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
 
-" For RUST
-let g:rustfmt_autosave = 1
