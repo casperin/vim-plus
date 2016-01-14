@@ -82,3 +82,10 @@ let b:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
 
 " EditorConfig - Should work nicely with fugitive and scp
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+" Tagbar
+map <leader>t :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+let g:tagbar_compact = 1
+let g:tagbar_foldlevel = 0
+let g:tagbar_iconchars = ['▸', '▾']
