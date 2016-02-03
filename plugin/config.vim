@@ -36,6 +36,10 @@ xnoremap s "_d
 :nnoremap <leader>a <C-a>
 :nnoremap <leader>d <C-x>
 
+" Use ag to search for whatever is under cursor
+map <leader>f yiw:Ag <C-r>"
+xmap <leader>f y:Ag <C-r>"
+
 " CtrlP
 """""""""
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore node_modules, et al.
