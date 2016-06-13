@@ -32,6 +32,10 @@ map <Leader>q :bp\|bd #<CR>
 xnoremap p "_dP
 xnoremap s "_d
 
+" Disable ex mode
+nnoremap Q <nop>
+map q: <Nop>
+
 " Remap increase and decrease number because <C-a> is used for tmux
 :nnoremap <leader>a <C-a>
 :nnoremap <leader>d <C-x>
