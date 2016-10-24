@@ -7,7 +7,18 @@ let mapleader = "\<space>"
 nmap <Leader>ss :source %
 nmap <Leader>sh :set hls!<CR>
 nmap <Leader>sp :set paste!<CR>
-nmap <leader>sr :ToggleRelativeNumbers<CR>
+nmap <Leader>sr :ToggleRelativeNumbers<CR>
+
+" console.log
+nmap <Leader>li iconsole.log()<Esc>i
+nmap <Leader>lo oconsole.log()<Esc>i
+imap l<TAB> console.log();<Esc>hi
+
+" Tabularize
+nmap <Leader>= vip:EasyAlign =<CR>
+vmap <Leader>= :EasyAlign =<CR>
+nmap <Leader>i vip:EasyAlign */from*/<CR>
+vmap <Leader>i :EasyAlign */from*/<CR>
 
 " Splits
 map <C-h> <C-w>h
