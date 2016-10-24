@@ -32,6 +32,7 @@ set directory=~/.vim/swp_backups//
 
 set ruler           " position of cursor
 set number          " line number
+set nofoldenable    " no folds
 "set nonumber
 "set relativenumber  " Set relative numbers (can be toggle with <Leader>sr)
 set showcmd         " commands
