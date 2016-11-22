@@ -26,7 +26,7 @@ map <leader>k <c-w>k
 map <leader>l <c-w>l
 
 " omnicomplete
-imap <c-h> <c-n> " <c-n> will open a new window
+inoremap <c-s> <c-n>
 
 " Buffers
 nmap <Tab> :b#<CR>
