@@ -1,7 +1,8 @@
 
 
 " Our great overlord
-let mapleader = "\<space>"
+" let mapleader = "\<space>"
+let mapleader = ","
 
 " set ...
 nmap <Leader>ss :source %
@@ -10,26 +11,28 @@ nmap <Leader>sp :set paste!<CR>
 nmap <Leader>sr :ToggleRelativeNumbers<CR>
 
 " console.log
-nmap <Leader>li iconsole.log()<Esc>i
-nmap <Leader>lo oconsole.log()<Esc>i
-imap l<TAB> console.log();<Esc>hi
+imap l<TAB> console.log()<Esc>i
 
 " Tabularize
-nmap <Leader>= vip:EasyAlign =<CR>
-vmap <Leader>= :EasyAlign =<CR>
-nmap <Leader>i vip:EasyAlign */from*/<CR>
-vmap <Leader>i :EasyAlign */from*/<CR>
+" nmap <Leader>= vip:EasyAlign =<CR>
+" vmap <Leader>= :EasyAlign =<CR>
+" nmap <Leader>i vip:EasyAlign */from*/<CR>
+" vmap <Leader>i :EasyAlign */from*/<CR>
 
 " Splits
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <leader>h <c-w>h
+map <leader>j <c-w>j
+map <leader>k <c-w>k
+map <leader>l <c-w>l
+
+" omnicomplete
+imap <c-h> <c-n> " <c-n> will open a new window
 
 " Buffers
 nmap <Tab> :b#<CR>
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>o :CtrlP<CR>
+
 
 " Tabs/Buffers
 map gh :PlusNavLeftRight prev<CR>
@@ -63,7 +66,7 @@ let g:ctrlp_working_path_mode = 0
 " NerdTree
 """"""""""""
 let NERDTreeIgnore = ['\.aux$']
-map <C-n> :NERDTreeToggle<CR>
+map <leader>m :NERDTreeToggle<CR>
 map <leader>n :NERDTreeFind<CR>
 let g:NERDTreeWinSize = 50
 
