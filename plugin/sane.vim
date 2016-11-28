@@ -54,6 +54,7 @@ set suffixesadd+=.js " so `gf` works with requireJS
 " Help with tab completion in ex mode (opening files, remembering commands, etc)
 set wildmenu
 set wildmode=longest:full,full
+set nostartofline   " Don't jump to beginning of line when changing buffer
 
 
 set splitright      " new splits are opened to the right
