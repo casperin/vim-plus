@@ -58,6 +58,9 @@ map q: <Nop>
 map <leader>f yiw:Ag <C-r>"
 xmap <leader>f y:Ag <C-r>"
 
+" Close all buffers but this one
+nnoremap <leader>c :BufOnly<CR>
+
 " CtrlP
 """""""""
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' " Ignore node_modules, et al.
