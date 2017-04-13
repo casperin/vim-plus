@@ -125,3 +125,11 @@ let g:tagbar_autofocus = 1
 let g:tagbar_compact = 1
 let g:tagbar_foldlevel = 0
 let g:tagbar_iconchars = ['▸', '▾']
+
+" vim-go
+let g:go_fmt_command = "goimports"
+autocmd CompleteDone * pclose
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>d <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)

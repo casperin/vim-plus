@@ -1,5 +1,6 @@
 
 set autoread        " Load the file if it has been changing outside vim
+set autowrite       " :make something something
 
 syntax on
 filetype plugin indent on
@@ -21,7 +22,6 @@ colorscheme Tomorrow-Night-Eighties  " Dark, but not too dark.
 "colorscheme 256-grayvim
 "colorscheme iceberg
 " colorscheme mango
-"colorscheme gruvbox
 
 " used by vim-jsx :: https://github.com/mxw/vim-jsx
 let g:jsx_ext_required = 0             " jsx syntax in .js files
@@ -39,8 +39,8 @@ set nofoldenable    " no folds
 set showcmd         " commands
 set hidden          " supress warning when switching away from an unsaved buffer
 set t_Co=256        " We will assume we're in a terminal that has 256 colors to work with
-set shiftwidth=2    " Tabs width
-set tabstop=2       " Tabs width
+set shiftwidth=4    " Tabs width
+set tabstop=4       " Tabs width
 set expandtab       " Insert spaces and not tabs
 set autoindent      " auto indent
 set smartindent     " smart indent
