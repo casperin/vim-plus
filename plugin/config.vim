@@ -136,3 +136,6 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 
 " elm-vim
 let g:elm_format_autosave = 1
+
+" fzf
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
