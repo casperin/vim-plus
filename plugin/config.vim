@@ -139,3 +139,6 @@ let g:elm_format_autosave = 1
 
 " fzf
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
+
+" rust
+let g:rustfmt_autosave = 1
